@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/sajidanower23/tutorial-ws/devel -DCMAKE_INSTALL_PREFIX=/home/sajidanower23/tutorial-ws/install -G Unix Makefiles
