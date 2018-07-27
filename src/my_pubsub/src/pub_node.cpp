@@ -21,7 +21,7 @@ int main(int argc, char ** argv) {
     return EXIT_SUCCESS;
 }
 
-Pub_Node::Pub_Node() {}
-
-void Pub_Node::spin() {}
+Pub_Node::Pub_Node() {
+    pub = nh.advertise<std_msgs::Float64>("/upper_arm_act_controller/command", 1, true);
+}
 
