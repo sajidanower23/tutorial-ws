@@ -25,10 +25,20 @@ Pub_Node::Pub_Node() {
     pub = nh.advertise<std_msgs::Float64>("/upper_arm_act_controller/command", 1, true);
 }
 
+// void Pub_Node::spin() {
+//     std_msgs::Float64 msg;
+//     while(ros::ok()) {
+//         msg.data = 1000;
+//         pub.publish(msg);
+//         ros::spinOnce();
+//     }
+// }
+
+
 void Pub_Node::spin() {
-    std_msgs::Float64 msg;
+    geometry_msgs::Twist msg;
     while(ros::ok()) {
-        msg.data = 1000;
+        msg.linear.x = 1;
         pub.publish(msg);
         ros::spinOnce();
     }
