@@ -22,7 +22,7 @@ int main(int argc, char ** argv) {
 }
 
 Pub_Node::Pub_Node() {
-    pub = nh.advertise<std_msgs::Float64>("/upper_arm_act_controller/command", 1, true);
+    pub = nh.advertise<geometry_msgs::Twist>("/cmd_vel", 1, true);
 }
 
 // void Pub_Node::spin() {

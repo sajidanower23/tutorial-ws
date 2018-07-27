@@ -11,6 +11,7 @@
 // These import the main ros libary and the message we are going to send
 #include <ros/ros.h>
 #include <std_msgs/Float64.h>
+#include <geometry_msgs/Twist.h>
 
 class Pub_Node {
     public:
